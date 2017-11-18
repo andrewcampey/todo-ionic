@@ -19,7 +19,8 @@ npm-debug.log*
 .versions/
 coverage/
 dist/
-node_modules/
+node_modules/*
+!node_modules/todo-package/
 tmp/
 temp/
 hooks/

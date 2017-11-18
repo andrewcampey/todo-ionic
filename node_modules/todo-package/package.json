@@ -1,0 +1,28 @@
+{
+  "name": "todo-package",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andrewcampey/todo-package"
+  },
+  "author": {
+    "name": "Hackday Team",
+    "email": "AndrewCampey@ssw.com.au"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andrewcampey/todo-package/issues"
+  },
+  "main": "todo-package.umd.js",
+  "module": "todo-package.js",
+  "jsnext:main": "todo-package.js",
+  "typings": "todo-package.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.0.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  }
+}
