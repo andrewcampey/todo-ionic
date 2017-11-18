@@ -18,24 +18,24 @@
 
   <ion-item>
     <ion-label fixed>Task ID</ion-label>
-    <ion-input type="text" value="{{ todoTask?.taskID }}"></ion-input>
+    <ion-input type="text" value="{{ todoTask?.taskID }}" readonly="true"></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label fixed>Task</ion-label>
-    <ion-input type="text" value="{{ todoTask?.newTask }}"></ion-input>
+    <ion-input type="text" value="{{ todoTask?.newTask }}" [(ngModel)]="newTask"></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label fixed>Geo Location</ion-label>
-    <ion-input type="text" value="{{ todoTask?.geolocation }}"></ion-input>
+    <ion-input type="text" value="{{ todoTask?.geolocation }}" [(ngModel)]="geoLocation"></ion-input>
   </ion-item>
 
     <ion-item>
       <ion-label fixed>Email</ion-label>
-      <ion-input type="text" value="{{ todoTask?.email }}"></ion-input>
+      <ion-input type="text" value="{{ todoTask?.email }}" [(ngModel)]="email"></ion-input>
     </ion-item>
 </ion-list>
-<button ion-button color="dark" round>{{ buttontext }}</button>
-<button *ngIf="isUpdate" ion-button color="dark" round>Delete</button>
+<button ion-button color="dark" round (click)="createupdateclick()">{{ buttontext }}</button>
+<button *ngIf="isUpdate" ion-button color="dark" round (click)="deleteclick()">Delete</button>
 </ion-content>
