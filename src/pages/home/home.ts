@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { TodoTask } from '../../../node_modules/todo-package';
+import { TodoTask } from '../../../node_modules/todo-package/models/todotask';
 import { TodoDetailPage } from '../todo-detail/todo-detail';
-import { TODOTASKS } from '../../../node_modules/todo-package';
+import { TODOTASKS } from '../../../node_modules/todo-package/models/todotask';
 
 @Component({
   selector: 'page-home',

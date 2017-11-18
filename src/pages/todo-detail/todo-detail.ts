@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { TodoTask } from '../../../node_modules/todo-package';
+import { TodoTask } from '../../../node_modules/todo-package/models/todotask';
 
 /**
  * Generated class for the TodoDetailPage page.
