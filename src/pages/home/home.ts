@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { TodoTask } from 'todo-package';
+import { TodoDetailPage } from '../todo-detail/todo-detail';
+import { TODOTASKS } from 'todo-package';
 
 @Component({
   selector: 'page-home',
@@ -7,8 +10,20 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  todos: TodoTask[];
 
+  constructor(public navCtrl: NavController) {
+    this.todos = TODOTASKS;
+    console.log("todo tasks" + TODOTASKS);
+  }
+
+  itemSelected(todotask: TodoTask, isUpdate: boolean)
+  {
+    this.navCtrl.push(TodoDetailPage, {
+      todoTask: todotask,
+      isUpdate: isUpdate
+    }
+    );
   }
 
 }
